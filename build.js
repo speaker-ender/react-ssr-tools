@@ -5,7 +5,7 @@ const sharedBuildProps = {
     bundle: true,
     entryPoints: [entryFile],
     logLevel: "info",
-    minify: true,
+    // minify: true,
     sourcemap: true,
 };
 

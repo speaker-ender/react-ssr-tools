@@ -25,9 +25,6 @@ export const useClientHook = () => {
 
     useEffect(() => {
         setIsClientSide(true);
-
-        return () => {
-        };
     }, []);
 
     return isClientSide;
