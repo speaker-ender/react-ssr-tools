@@ -1,4 +1,5 @@
-const esbuild = require("esbuild");
+import esbuild from 'esbuild'
+import { nodeExternalsPlugin } from 'esbuild-node-externals'
 
 const entryFile = "src/index.ts";
 const sharedBuildProps = {
@@ -7,6 +8,7 @@ const sharedBuildProps = {
     logLevel: "info",
     minify: true,
     sourcemap: true,
+    plugins: [nodeExternalsPlugin()],
 };
 
 // ESM
